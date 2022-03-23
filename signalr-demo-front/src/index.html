@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test SignalR</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mt-3 mb-3 d-block">
+        <div class="card-header">
+          Chat Hub
+          <button id="btToggleChatHub" class="btn btn-danger btn-sm">
+            OFF
+          </button>
+        </div>
+        <div class="card-body">
+          <div id="divMessages" class="messages"></div>
+          <div class="input-zone">
+            <label id="lblMessage" for="tbMessage">Message:</label>
+            <input id="tbMessage" class="input-zone-input" type="text" />
+            <button id="btnSend" class="btn btn-sm btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3 mb-3 d-block">
+        <div class="card-header">
+          Rugby Hub
+          <button id="btToggleRugbyHub" class="btn btn-danger btn-sm">
+            OFF
+          </button>
+        </div>
+        <div class="card-body">
+          <div id="divRugby"></div>
+        </div>
+      </div>
+
+      <div class="card mt-3 d-block">
+        <div class="card-header">
+          Movies Hub
+          <button id="btToggleMoviesHub" class="btn btn-danger btn-sm">
+            OFF
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="cbHP"
+              value="HarryPotter"
+            />
+            <label class="form-check-label" for="cbHP">Harry Potter</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="cbLOTR"
+              value="LordOfTheRings"
+            />
+            <label class="form-check-label" for="cbLOTR"
+              >Lord of The Rings</label
+            >
+          </div>
+          <ul id="ulMovies"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
